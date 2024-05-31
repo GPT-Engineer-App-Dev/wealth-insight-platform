@@ -5,10 +5,11 @@ import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 
 const colors = {
   brand: {
-    900: "#1a365d",
-    800: "#153e75",
-    700: "#2a69ac",
+    900: "#004b87", // Updated to match Financial Times background color
+    800: "#005a9c", // Updated to match Financial Times background color
+    700: "#0072ce", // Updated to match Financial Times background color
   },
+  background: "#f3f2f1" // Adding a new background color
 };
 
 const theme = extendTheme({ colors });

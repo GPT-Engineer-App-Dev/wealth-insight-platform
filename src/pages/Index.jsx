@@ -3,7 +3,7 @@ import { FaFacebook, FaTwitter, FaLinkedin } from "react-icons/fa";
 
 const Index = () => {
   return (
-    <Container maxW="container.xl" p={0}>
+    <Container maxW="container.xl" p={0} bg="background">
       {/* Header */}
       <Box bg="brand.800" color="white" py={4}>
         <Heading as="h1" size="xl" textAlign="center">
@@ -25,7 +25,7 @@ const Index = () => {
       {/* Main Content Area */}
       <Flex direction={{ base: "column", md: "row" }} p={4}>
         {/* Articles Section */}
-        <Box flex="3" p={4}>
+        <Box flex="3" p={4} bg="background">
           <VStack spacing={8} align="stretch">
             <Box>
               <Heading as="h2" size="lg">Sample Article 1</Heading>
@@ -43,7 +43,7 @@ const Index = () => {
         </Box>
 
         {/* Sidebar */}
-        <Box flex="1" bg="gray.100" p={4} ml={{ md: 4 }} mt={{ base: 4, md: 0 }}>
+        <Box flex="1" bg="background" p={4} ml={{ md: 4 }} mt={{ base: 4, md: 0 }}>
           <Heading as="h3" size="md" mb={4}>Sidebar</Heading>
           <VStack spacing={4} align="stretch">
             <Link href="#" _hover={{ textDecoration: "none", color: "brand.700" }}>Additional Link 1</Link>
@@ -54,7 +54,7 @@ const Index = () => {
       </Flex>
 
       {/* Footer */}
-      <Box bg="gray.800" color="white" py={4} mt={8}>
+      <Box bg="background" color="white" py={4} mt={8}>
         <Flex direction={{ base: "column", md: "row" }} justify="space-between" align="center">
           <Text>&copy; 2023 Financial Times. All rights reserved.</Text>
           <HStack spacing={4}>
